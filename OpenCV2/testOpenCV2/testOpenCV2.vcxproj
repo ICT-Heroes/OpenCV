@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="back_main.cpp" />
+    <ClCompile Include="ImageProcess.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SVM.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data.tex" />
@@ -139,7 +142,9 @@
     <None Include="svm.tex" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ImageProcess.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SVM.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="testOpenCV2.rc" />
