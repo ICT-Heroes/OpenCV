@@ -1,7 +1,5 @@
 
 
-
-
 #include <iostream>
 #include <math.h>
 #include <string>
@@ -20,10 +18,14 @@ using namespace std;
 int main() {
 	
 	char* imageFile = "C:/work/lena.jpg";
-	IplImage* grayImage = cvLoadImage(imageFile, CV_LOAD_IMAGE_GRAYSCALE);
-	IplImage* colorImage = cvLoadImage(imageFile, CV_LOAD_IMAGE_COLOR);
-	cvShowImage("Original_Gray", grayImage);
-	cvShowImage("Original_Color", colorImage);
+	Mat edge;
+	Mat grayImage = imread(imageFile, CV_LOAD_IMAGE_GRAYSCALE);
+	Mat colorImage = imread(imageFile, CV_LOAD_IMAGE_COLOR);
+	
+	edge = EdgeDetection(grayImage, 1);
+	imshow("Original_Grayfdsafdsa", edge);
+	imshow("Original_Gray", grayImage);
+	imshow("Original_Color", colorImage);
 
 	Mat trainingData(getNumberTrainingPoints(), 2, CV_32FC1);
 	Mat testData(getNumberTestPoints(), 2, CV_32FC1);

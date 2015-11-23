@@ -7,4 +7,7 @@
 #include "ml.h"
 #include "highgui.h"
 
-IplImage* EdgeDetection(IplImage* grayImage);
+using namespace cv;
+using namespace std;
+
+Mat EdgeDetection(Mat& grayImage, int mask);

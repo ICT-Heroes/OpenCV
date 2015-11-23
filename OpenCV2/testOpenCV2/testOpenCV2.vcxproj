@@ -22,6 +22,7 @@
     <ProjectGuid>{46E69B8C-3666-4C83-9B3F-1F17C345DE92}</ProjectGuid>
     <RootNamespace>testOpenCV2</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>testOpenCV2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
