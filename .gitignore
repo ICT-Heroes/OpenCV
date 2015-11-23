@@ -6,9 +6,6 @@
 *.user
 *.userosscache
 *.sln.docstates
-*.vcxproj 
-*.sln
-*.vcsproj.filters
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -232,5 +229,3 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
-VirtualLego.vcxproj
-VirtualLego.vcxproj.filters

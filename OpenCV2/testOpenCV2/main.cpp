@@ -10,6 +10,7 @@
 #include "highgui.h"
 
 #include "SVM.h"
+#include "ImageProcess.h"
 
 using namespace cv;
 using namespace std;
@@ -33,10 +34,10 @@ int main() {
 	Mat trainingClasses = labelData(trainingData, getEq());
 	Mat testClasses = labelData(testData, getEq());
 
-	PrintWindow(trainingData, trainingClasses, "Training Data");
-	PrintWindow(testData, testClasses, "Test Data");
+	//PrintWindow(trainingData, trainingClasses, "Training Data");
+	//PrintWindow(testData, testClasses, "Test Data");
 
-	svm(trainingData, trainingClasses, testData, testClasses);
+	//svm(trainingData, trainingClasses, testData, testClasses);
 	//mlp(trainingData, trainingClasses, testData, testClasses);
 	//knn(trainingData, trainingClasses, testData, testClasses, 3);
 	//bayes(trainingData, trainingClasses, testData, testClasses);
