@@ -234,3 +234,5 @@ _Pvt_Extensions
 .fake/
 VirtualLego.vcxproj
 VirtualLego.vcxproj.filters
+testOpenCV2.vcxproj
+**/testOpenCV2.vcxproj
