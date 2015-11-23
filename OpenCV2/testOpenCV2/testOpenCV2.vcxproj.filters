@@ -15,13 +15,41 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Test.h">
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="machinelearning.tex">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="data.tex">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="evaluation.tex">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="installation.tex">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="introduction.tex">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="mlp.tex">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="svm.tex">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <ResourceCompile Include="testOpenCV2.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
