@@ -24,17 +24,16 @@ int GetEdgeOfPixel(Mat& img, int x, int y, int mask) {
 }
 
 Mat EdgeDetection(Mat& grayImage, int mask){
-	int width = grayImage.cols;
-	int height = grayImage.rows;
+	int width = grayImage.rows;
+	int height = grayImage.cols;
 
 	Mat ret = Mat(width, height, CV_8UC1);
 
 	for (int x = 1; x < width - 1; x++) {
 		for (int y = 1; y < height - 1; y++) {
 			int sum = GetEdgeOfPixel(grayImage, x, y, mask);
-			//sum /= 4;
+			
 			if (sum < 0) sum *= -1;
-			//if (sum == 0) sum = 1;
 			if (255 < sum){
 				sum = 255;
 			}

@@ -22,7 +22,7 @@ int main() {
 	Mat grayImage = imread(imageFile, CV_LOAD_IMAGE_GRAYSCALE);
 	Mat colorImage = imread(imageFile, CV_LOAD_IMAGE_COLOR);
 	
-	edge = EdgeDetection(grayImage, 1);
+	edge = EdgeDetection(grayImage, 2);
 	imshow("Original_Grayfdsafdsa", edge);
 	imshow("Original_Gray", grayImage);
 	imshow("Original_Color", colorImage);
