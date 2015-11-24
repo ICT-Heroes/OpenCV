@@ -10,4 +10,12 @@
 using namespace cv;
 using namespace std;
 
-Mat EdgeDetection(Mat& grayImage, int mask);
+IplImage* EdgeDetection(IplImage* grayImage, int mask);
+
+IplImage* PressEdges(IplImage* edge, int size);
+
+IplImage* ExpendImage(IplImage* img, int scale);
+
+IplImage* ExpendImage(IplImage* src, int scale, int way);
+
+void ExpendImage(IplImage* dst, IplImage* src, int scale, int way);
