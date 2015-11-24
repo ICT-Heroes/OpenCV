@@ -38,8 +38,7 @@ IplImage* EdgeDetection(IplImage* grayImage, int mask){
 			if (255 < edge)
 				edge = 255;
 			color.val[0] = color.val[1] = color.val[2] = edge;
-			for (int k = 0; k < ret->nChannels; k++)
-				cvSet2D(ret, x, y, color);
+			cvSet2D(ret, x, y, color);
 		}
 	}
 
@@ -62,7 +61,7 @@ IplImage* PressEdges(IplImage* edge, int size){
 			sum = 0;
 			for (int x = 0; x < cellWidth; x++) {
 				for (int y = 0; y < cellHeight; y++) {
-					sum += cvGet2D(edge, cellx*cellWidth + x + 1, celly*cellHeight + y + 1).val[0];
+					sum += cvGet2D(edge, cellx*cellWidth + x, celly*cellHeight + y).val[0];
 				}
 			}
 			//sum *= 255;
