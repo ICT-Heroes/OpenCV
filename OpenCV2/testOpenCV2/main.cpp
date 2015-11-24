@@ -21,9 +21,9 @@ int main() {
 	*/
 	int mode = 0;
 
-	char* lena = "C:/work/lena_std.jpg";
-	char non_vehicles[] = "C:/work/car_collection/nvehicles/col2/image0000.png";
-	char vehicles[] = "C:/work/car_collection/yvehicles/col2/image0000.png";
+	char* lena = "lena_std.jpg";
+	char non_vehicles[] = "car/nov/col2/image0000.png";
+	char vehicles[] = "car/yes/col2/image0000.png";
 	IplImage* edge, *pressEdge, *extendEdge;
 	IplImage* grayImage = cvLoadImage(lena, CV_LOAD_IMAGE_GRAYSCALE);
 
@@ -50,9 +50,9 @@ int main() {
 
 		fout.open("data.dat");
 		for (int i = 0; i < 85; i++){
-			non_vehicles[46] = (i % 10 + 48);
-			non_vehicles[45] = (i / 10) % 100 + 48;
-			non_vehicles[44] = (i / 100) % 1000 + 48;
+			non_vehicles[21] = (i % 10 + 48);
+			non_vehicles[20] = (i / 10) % 100 + 48;
+			non_vehicles[19] = (i / 100) % 1000 + 48;
 			grayImage = cvLoadImage(non_vehicles, CV_LOAD_IMAGE_GRAYSCALE);
 			fout << "-1 ";
 			for (int k = 0; k < 4; k++){
@@ -69,9 +69,9 @@ int main() {
 			fout << "\n";
 		}
 		for (int i = 0; i < 85; i++){
-			non_vehicles[46] = (buff % 10 + 48);
-			non_vehicles[45] = (buff / 10) % 100 + 48;
-			non_vehicles[44] = (buff / 100) % 1000 + 48;
+			non_vehicles[21] = (buff % 10 + 48);
+			non_vehicles[20] = (buff / 10) % 100 + 48;
+			non_vehicles[19] = (buff / 100) % 1000 + 48;
 			grayImage = cvLoadImage(non_vehicles, CV_LOAD_IMAGE_GRAYSCALE);
 			fout << "-1 ";
 			for (int k = 0; k < 4; k++){
@@ -95,7 +95,7 @@ int main() {
 		ofstream fout;
 		int buff = 0;
 		fout.open("test.dat");
-		grayImage = cvLoadImage("C:/work/car_collection/yvehicles/col3/image0030.png", CV_LOAD_IMAGE_GRAYSCALE);
+		grayImage = cvLoadImage("car/yes/col2/image0100.png", CV_LOAD_IMAGE_GRAYSCALE);
 		for (int k = 0; k < 4; k++){
 			pressEdge = PressEdges(EdgeDetection(grayImage, k), 30);
 			for (int y = 0; y < 30; y++){
