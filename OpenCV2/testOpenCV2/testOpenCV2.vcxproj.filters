@@ -18,13 +18,25 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SVM.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ImageProcess.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="back_main.cpp">
+    <ClCompile Include="svm_common.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="svm_learn.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="svm_match.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="svm_makeTestData.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="svm_makeLearnData.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="data_makeImageData.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -55,10 +67,28 @@
     <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SVM.h">
+    <ClInclude Include="ImageProcess.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ImageProcess.h">
+    <ClInclude Include="svm_common.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="svm_learn.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="svm_match.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="svm_makeTestData.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="svm_Header.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="svm_makeLearnData.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="data_makeImageData.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

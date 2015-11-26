@@ -128,10 +128,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="back_main.cpp" />
+    <ClCompile Include="data_makeImageData.cpp" />
     <ClCompile Include="ImageProcess.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SVM.cpp" />
+    <ClCompile Include="svm_common.c" />
+    <ClCompile Include="svm_learn.c" />
+    <ClCompile Include="svm_makeLearnData.cpp" />
+    <ClCompile Include="svm_makeTestData.cpp" />
+    <ClCompile Include="svm_match.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data.tex" />
@@ -143,9 +147,15 @@
     <None Include="svm.tex" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="data_makeImageData.h" />
     <ClInclude Include="ImageProcess.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="SVM.h" />
+    <ClInclude Include="svm_common.h" />
+    <ClInclude Include="svm_Header.h" />
+    <ClInclude Include="svm_learn.h" />
+    <ClInclude Include="svm_makeLearnData.h" />
+    <ClInclude Include="svm_makeTestData.h" />
+    <ClInclude Include="svm_match.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="testOpenCV2.rc" />
