@@ -19,7 +19,7 @@ int main() {
 		1 : Make data.dat
 		2 : Make specify data -> test.dat
 	*/
-	int mode = 0;
+	int mode = 2;
 
 	char* lena = "lena_std.jpg";
 	char non_vehicles[] = "car/nov/col2/image0000.png";
